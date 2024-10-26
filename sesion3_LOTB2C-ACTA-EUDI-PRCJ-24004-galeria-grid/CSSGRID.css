@@ -1,0 +1,79 @@
+.container {
+    /* Esta es in Id del main aqui le damos la propiedad o
+     manejo grid luego colocamos las columnas y los renglones
+      edspues colocamos el ancho y el largo luego definimos las
+    areas donde se posionaran las imagenes o elementos  */
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(3, 100px) ;
+    width: 800px;
+    height: 600px;
+    background-color:khaki;
+
+    grid-template-areas:
+   
+    "perrit1 perrit2 perrit3  perr1"
+     "perrit4 perrit5 perrit6 perr2"
+     "perrit7 perrit8 perrit9 perr3"
+    ;
+     
+     align-content: center;
+     justify-content: center;
+    /* column-gap: 12px;
+     row-gap: 12px;*/
+     /*gap: 12px 12px;*/
+     /*estas dos lines son  lineaciones verticales y horizontales */
+   
+}
+
+
+.container > div:nth-child(1) {
+    /* Esta es un ID y le indicamos que un hijo de esta 
+    luego colocamos la posision  dode estara al principio y al fina de la columna y fila
+    la linea que no esta comentada es similar a las que si estan comentadas pero esta se 
+    basa con el gird-template area que esta el ID*/
+    /*grid-column-start: 5;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 5;*/
+    grid-area: perrit2 ;
+   
+}
+.container > div:nth-child(2) {
+   /* grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 4;*/
+    grid-area: perrit4;
+   
+}
+.container > div:nth-child(3) {
+   /* grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;*/
+    grid-area: perr1;
+   
+}
+.container > div:nth-child(4) {
+    /*grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;*/
+    grid-area: perrit6;
+   
+}
+.container > div:nth-child(5) {
+    /*grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 4; */
+    grid-area: perrit8;
+   
+}
+.container > div:nth-child(6) {
+    /*grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 4; */
+    grid-area: perr3;}

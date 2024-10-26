@@ -1,0 +1,53 @@
+.divorcio
+{
+
+display: flex;
+justify-content: center;
+
+
+}
+.containerr
+{
+
+    display: flex;
+flex-flow: row-reverse;
+align-items: center;
+justify-content: center;
+background-color:aquamarine;
+
+width: 900px;
+height: 600px;
+
+}
+
+
+.container1 > div > img
+{
+    
+    width: 100px;
+    margin: 10px 5px;
+    height: 100px;
+
+}
+.container1 > div
+{
+
+    width: 100px;
+    margin: 10px 5px;
+    height: 100px;
+}
+.container2 > div > img
+{
+    
+    width: 100px;
+    margin: 10px 5px;
+    height: 100px;
+
+}
+.container2 > div
+{
+
+    width: 100px;
+    margin: 10px 5px;
+    height: 100px;
+}
